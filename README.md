@@ -1,2 +1,2 @@
 # teamid.live
-Community-Solid-Server by [meisdata.io](https://meisdata.io)
+Community-Solid-Server of [meisdata.io](https://meisdata.io)
