@@ -1,7 +1,7 @@
 'use strict'
 var keyname = 'SolidServerRootRedirectLink';
 function register() { 
-    alert(2); window.location.href = "/idp/register/"; 
+    alert(2); window.location.href = "/.account/login/password/register/"; 
 }
 document.addEventListener('DOMContentLoaded', async function() {
     const authn = UI.authn
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         //     HIDE LOGIN BUTTON, ADD REGISTER BUTTON
         else {
         let loginArea = document.getElementById('loginStatusArea');
-        let html = `<input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" class="register-button" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">`
+        let html = `<input type="button" onclick="window.location.href='/.account/login/password/register/'" value="Sign up" class="register-button" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">`
         let span = document.createElement("span")
         span.innerHTML = html
         loginArea.appendChild(span);
