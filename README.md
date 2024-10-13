@@ -124,8 +124,8 @@ server {
   server_name teamid.live;
   listen 443 ssl http2;
   listen [::]:443 ssl http2;
-  ssl_certificate         /etc/letsencrypt/archive/teamid.live/fullchain6.pem;
-  ssl_certificate_key     /etc/letsencrypt/archive/teamid.live/privkey6.pem;
+  ssl_certificate         /etc/letsencrypt/archive/teamid.live/fullchain8.pem;
+  ssl_certificate_key     /etc/letsencrypt/archive/teamid.live/privkey8.pem;
   ssl_trusted_certificate /etc/letsencrypt/live/teamid.live/lets-encrypt-x3-cross-signed.pem;
 
 #rewrite ^/$  somewhereelse/index.html  permanent;
