@@ -1,7 +1,7 @@
 # teamid.live
 Community-Solid-Server of [meisdata.io](https://meisdata.io)
 - - - -
-sample config as of 2024-05-21
+sample config as of 2024-10-13
 - - - -
 `/data/css/Recipes/mashlib/node_modules/@solid/community-server/config$ less config-mashlib.json`
 ```
@@ -46,7 +46,7 @@ sample config as of 2024-05-21
         "Derived from config/file-no-setup.json"
       ]
     },
-  {
+    {
       "comment": "Serve Databrowser as default representation",
       "@id": "urn:solid-server:default:DefaultUiConverter",
       "@type": "ConstantConverter",
