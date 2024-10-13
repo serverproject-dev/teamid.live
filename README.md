@@ -185,3 +185,7 @@ ssl_stapling_verify on;
 ```
 npx @solid/community-server -c @css:config/config-mashlib.json -f /var/www/teamid.live -b https://teamid.live/
 ```
+or
+```
+/root/.nvm/versions/node/v18.16.0/bin/node /data/css/Recipes/mashlib/node_modules/@solid/community-server/bin/server.js -c @css:config/config-mashlib.json -f /var/www/teamid.live -b https://teamid.live/
+```
