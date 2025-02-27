@@ -1,44 +1,112 @@
-<!-- Location : /var/www/teamid.live/index.html -->
+
+<!-- Location : /var/www/html/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <!--<base href="https://teamid.live/"/>-->
 <meta charset="utf-8"/>
-<link integrity = "" rel="stylesheet" href="./style.css">
+<!-- <link integrity = "" rel="stylesheet" href="style.css"> -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
 <meta name="author" content="Matthias Evering"/>
 <meta name="editor" content="FeatherPad 1.4.1"/>
-<meta name="keywords" content="Solid, community solid server, css, webid, pod, Linked Data, Semantic Web, decentralization, W3C, meisdata"/>
+<meta name="keywords" content="Solid, pivot solid server, css fork, webid, pod, Linked Data, Semantic Web, decentralization, W3C, meisdata"/>
 <meta name="description" content="teamid.live is a Solid Pod provider that follows the current specification in https://solidproject.org/TR/protocol"/>
 <link rel="icon" href="https://www.serverproject.de/favicon.ico" type="image/x-ico; charset=binary"/>
 <title>teamid.live</title>
-<script defer="defer" src="/mashlib.min.js"></script>
+<!-- not sure if needed -->
+<!-- <script defer="defer" src="/mashlib.min.js"></script> -->
+<style type="text/css" media="screen">
+a
+{
+text-decoration-line: underline;
+text-decoration-color: white;
+}
+.index-page {
+    background-color: #000000;
+    font-size: 1em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #f8f8f8;
+  }
+
+.index-page .header {
+background-color: #f8f8f8;
+    box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
+    text-align: center !important;
+    color: #7C4DFF;
+    padding: 10px;
+    display: inline-flex;
+    width: 99%;
+  }
+  
+.index-page .header-left {
+    text-align: left;
+    margin-top: 0.67em;
+    width: 19%;
+  }
+
+.index-page .header-center {
+    margin: auto;
+  }
+
+@media screen and (max-width: 1000px) {
+    .header-right {
+      display: block !important;
+    }
+  }
+
+.header-right {
+    display: inline-flex;
+    margin-top: 0.67em;
+    min-width: 19%;
+  }
+
+.index-page .logo-img {
+    width: 50px;
+  }
+  
+.index-page .title {
+      color: #7C4DFF;
+      font-size: 2em;
+      line-height: 1em;
+  }
+  
+ .index-page .logo {
+    color: #f8f8f8;
+  }
+</style>
 </head>
 <body class="index-page" bgcolor = "black">
 <div class="header">
-	<!--<table width = "100%" bgcolor = "white">-->
+	<!-- <table width = "100%" bgcolor = "white"> -->
     <div class="header-left">
-   <a href="https://teamid.live/"><img class="logo-img" src="./logo2.png"></a> 
+   <a href="https://teamid.live/"><img class="logo-img" src="https://www.serverproject.de/logo2.png"></a> 
     </div>
     <div class="header-center">
       <h1 class="title">teamid.live (Solid prototype)</h1>
     </div>
-    <div class="header-right" id="loginStatusArea"></div>
-   
-<a href = "https://github.com/SolidOS/userguide"><img src="./qm.svg"></a>
-  <!--</table>-->
+    <div class="header-right" id="loginStatusArea">
+    <div class="actions">
+      <a href="/.account/login/password/register/"><button id="register" type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #efe;">Sign up</button></a>
+      <a href="/.account/login/password/"><button id="login" type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #eef;">Log in</button></a>
+    </div>
+    </div>
+<!--<input type="button" onclick="window.location.href='./index3.html'" value="Log in" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #eef;">
+<input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">-->  
+<a href = "https://github.com/SolidOS/userguide"><img src="https://www.serverproject.de/pics/qm.svg"></a>
+ <!-- </table> -->
   </div>
   
   <div class="container" id="prototype">
 
-    <h3 style="display:none" id="loggedIn" class="webId"></h3>
+    <!-- <h3 style="display:none" id="loggedIn" class="webId"></h3> -->
 
     <div class="content">
 <div>
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<div align = "center">This is <a href = "https://communitysolidserver.github.io/CommunitySolidServer/latest/">Community Solid Server</a> 7.1.6 by <a href = "https://meisdata.io">meisdata.io</a></div>
+<div align = "center">This is <a href = "https://github.com/solid-contrib/pivot">Solid Pivot Server</a> 1.6.4 by <a href = "https://meisdata.io">meisdata.io</a></div>
 <br />
 <div align = "center"><a href = "https://solidos.github.io/mashlib/dist/browse.html">Databrowser</a></div>
 <br /><br /><br />
@@ -46,7 +114,9 @@
 </div>
 </div> <!-- end content-->
 </div> <!-- end container-->
+<!-- not sure if needed -->
 <script src="/mashlib.js"></script>
-<script src="/button-helper.js"></script>
+<!-- not needed
+<script src="/button-helper.js"></script> -->
 </body>
 </html>
