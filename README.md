@@ -1,5 +1,5 @@
 # teamid.live
-Community-Solid-Server of [meisdata.io](https://meisdata.io)
+Pivot-Solid-Server of [meisdata.io](https://meisdata.io)
 - - - -
 sample config as of 2024-10-13
 - - - -
