@@ -190,6 +190,7 @@ or
 /root/.nvm/versions/node/v18.16.0/bin/node /data/css/Recipes/mashlib/node_modules/@solid/community-server/bin/server.js -c @css:config/config-mashlib.json -f /var/www/teamid.live -b https://teamid.live/
 ```
 appendix march 2025
+
 `/data/pivot0/pivot`
 ```
 total 656
@@ -400,6 +401,7 @@ config/storage/middleware/default.json, (3) pivot:config/pivot-overrides.json ad
   }
 ```
 email config has changed
+
 `/data/pivot0/pivot/pm3.sh`
 ```
 npx community-solid-server -c ./config/prod.json ./custom-config.json -f /var/www/html --httpsKey /etc/letsencrypt/archive/teamid.live/privkey1.pem --httpsCert /etc/letsencrypt/archive/teamid.live/fullchain1.pem -p 443 -b https://teamid.live/ -m .
