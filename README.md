@@ -406,3 +406,7 @@ email config has changed
 ```
 npx community-solid-server -c ./config/prod.json ./custom-config.json -f /var/www/html --httpsKey /etc/letsencrypt/archive/teamid.live/privkey1.pem --httpsCert /etc/letsencrypt/archive/teamid.live/fullchain1.pem -p 443 -b https://teamid.live/ -m .
 ```
+local
+`/home/evemat/Dokumente/meisdata/paypal/work/`
+`/data/pivot0/pivot/node_modules/@solid/community-server/templates/identity/password/register.html.ejs`
+`/data/pivot0/pivot/templates/identity/password/login.html.ejs`
