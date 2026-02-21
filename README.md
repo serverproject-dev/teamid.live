@@ -2,7 +2,6 @@
 Solid-Pivot-Server of [meisdata.io](https://meisdata.io)
 - - - -
 
-```
 `/data/pivot0/pivot/node_modules/@solid/community-server/config/identity/email$ less default.json`
 ```
 {
